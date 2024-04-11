@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "SMTB ダイレクト番号 自動入力",
+  "short_name": "SMTBAutoFill",
+  "description": "SMTB スミトラ銀行のネット振込等で要求されるダイレクト番号入力を自動化します。他のサイトでは使用できません。",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "16": "images/icon_16.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "action": {
+    "default_icon": "images/icon_16.png",
+    "default_title": "title",
+    "default_popup": "html/options.html"
+  },
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://direct.smtb.jp/*"],
+      "js": ["js/content.js"],
+      "all_frames": true
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

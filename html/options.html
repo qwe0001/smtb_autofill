@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Options</title>
+  <meta charset="UTF-8" />
+  <style>
+    * {
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 10px auto;
+    }
+    th,td {
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    .directInput {
+      width: 2em;
+    }
+  </style>
+<script type="text/javascript" nonce="7caa27b5be2845af9666a1b5e5a" src="//local.adguard.org?ts=1712752810590&amp;type=content-script&amp;dmn=mail-attachment.googleusercontent.com&amp;url=https%3A%2F%2Fmail-attachment.googleusercontent.com%2Fattachment%2Fu%2F0%2F%3Fui%3D2%26ik%3Ddad0b261e0%26attid%3D0.1%26permmsgid%3Dmsg-f%3A1795953898914308056%26th%3D18ec828e41c3dfd8%26view%3Datt%26disp%3Dsafe%26saddbat%3DANGjdJ94WD7kSZEe12yCAgqE-NfIcP4D4hB5ugaApnVbYUu595CrqF2Vyta8xn6XxkN2UikuqyUEKoGcPlP1leM913wtkth0CONLLzHN291Mi9aL9Mw-JJykkCiZ87KNlpCEPaKYDW2hcKCh1BzyTFRsCRMUTXxwC-7ySuYJ_yHvcsP9ogQf-X-pnnoiU9VWlYcaneGIWezHsi1xaHLvlSPh_Hri-2qCoZhBN7Ky0LLSZXENEqCkgZA07Cs-WuVj84Gptk4qjv2uiEyKcAJY2Lvtn0Aj6ylSLvwGKW-4U26aUbBLifojUORsswSUo6QspGDXiCpc0d43lZclO9oBtIGRFUl4l9_ysitwUA6tbWdtRCSXiBbOdeXZmn1ccbo8kJ7YUvnYEQ8bKyGs_uyGdf_INnDrOj8jpTBRtQWX45ZHUkmZo0YK3c4SZtei1JgHac_xjoD8rp1EhaIND5rp-fi1E0dw4HX5qrUCLPElmNS9CVmBANo6F6-1jmq3NQYpCN_I_NdMoZdb-d6BH9w6x42T2SMWcTflbRUjVFu9lPeuZkCOajKfz163udlo06m1XnqYZKKhFIukvsSaGGfN2cEd0dqPs4EBNpJJOP8DG0kpCHDubcmsGtlV0N7ATCfQQfhTCfIG7fpWd2q-2YQGCb2faKyDmsY1hRO5S5f4nZqT2tuPVJQDKdHs80TW6kN749CLGA7ZY8KuqwayDc2x_3SbTxSiqUtDIRlBQBK4RjxHzaqUqZVjal0oD9NgD-SX3Qeh5ipgxRQKS5GrrXwOrPVJGvFF7YfMic7wET10k0dKVXPnV6MlC0cJ9-mQCm9pWY1RCs-ObBZrrHDLr8BCfgNTSAxR0tnKmAZt_pXVjYgTNRSu9odn6L-XJ5KpYTpj1wgtuiG_4kQzyKpYQYRXpFF9SPQMnE4ufTDo2LUca3yV0D_kAcCiCBxqdtkDQoEE3JvEMHKe0nie4pYPueW0wCJMqY5kGwspV3Pdla-mG2sdUokPA_nk_5EpNT9cVbmiDS4hxL-uowJt3pPwn9gMaU51UXEbI981aDefkWn9KQ&amp;app=brave.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script>
+<script type="text/javascript" nonce="7caa27b5be2845af9666a1b5e5a" src="//local.adguard.org?ts=1712752810590&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;name=Web%20of%20Trust&amp;type=user-script"></script></head>
+<body>
+  <h1>ダイレクト番号入力</h1>
+  <h2>銀行の取引カードの番号を<br>以下に入力してください</h2>
+  <p>もちろん外部送信はしません</p>
+  <table id="directCardTable">
+    <tbody>
+      <tr>
+        <th>&nbsp;</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+      <tr>
+        <td>1</td>
+        <td><input type="text" name="directNumbers['A'][]" id="A-1" placeholder="A1" value="01" data-col="A" data-row="1" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['B'][]" id="B-1" placeholder="B1" value="02" data-col="B" data-row="1" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['C'][]" id="C-1" placeholder="C1" value="03" data-col="C" data-row="1" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['D'][]" id="D-1" placeholder="D1" value="04" data-col="D" data-row="1" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['E'][]" id="E-1" placeholder="E1" value="05" data-col="E" data-row="1" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="text" name="directNumbers['A'][]" id="A-2" placeholder="A2" value="11" data-col="A" data-row="2" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['B'][]" id="B-2" placeholder="B2" value="12" data-col="B" data-row="2" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['C'][]" id="C-2" placeholder="C2" value="13" data-col="C" data-row="2" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['D'][]" id="D-2" placeholder="D2" value="14" data-col="D" data-row="2" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['E'][]" id="E-2" placeholder="E2" value="15" data-col="E" data-row="2" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><input type="text" name="directNumbers['A'][]" id="A-3" placeholder="A3" value="21" data-col="A" data-row="3" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['B'][]" id="B-3" placeholder="B3" value="22" data-col="B" data-row="3" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['C'][]" id="C-3" placeholder="C3" value="23" data-col="C" data-row="3" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['D'][]" id="D-3" placeholder="D3" value="24" data-col="D" data-row="3" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['E'][]" id="E-3" placeholder="E3" value="25" data-col="E" data-row="3" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><input type="text" name="directNumbers['A'][]" id="A-4" placeholder="A4" value="31" data-col="A" data-row="4" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['B'][]" id="B-4" placeholder="B4" value="32" data-col="B" data-row="4" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['C'][]" id="C-4" placeholder="C4" value="33" data-col="C" data-row="4" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['D'][]" id="D-4" placeholder="D4" value="34" data-col="D" data-row="4" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['E'][]" id="E-4" placeholder="E4" value="35" data-col="E" data-row="4" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><input type="text" name="directNumbers['A'][]" id="A-5" placeholder="A5" value="41" data-col="A" data-row="5" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['B'][]" id="B-5" placeholder="B5" value="42" data-col="B" data-row="5" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['C'][]" id="C-5" placeholder="C5" value="43" data-col="C" data-row="5" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['D'][]" id="D-5" placeholder="D5" value="44" data-col="D" data-row="5" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+        <td><input type="text" name="directNumbers['E'][]" id="E-5" placeholder="E5" value="45" data-col="E" data-row="5" minlength="2" maxlength="2" inputmode="numeric" pattern="\d*" class="directInput" required></td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="saveButton">保存</button>
+  <button id="clearButton">クリア</button>
+  <script src="../js/options.js"></script>
+</body>
+</html>
