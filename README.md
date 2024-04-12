@@ -2,7 +2,9 @@
 
 ## ダウンロード
 
-(現在申請中。申請が通り次第追記します)
+[SMTB ダイレクト番号 自動入力](https://chromewebstore.google.com/detail/smtb-%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E7%95%AA%E5%8F%B7-%E8%87%AA%E5%8B%95%E5%85%A5%E5%8A%9B/ncjjdnpogbalpblpjljeflmlncihaadl)
+
+※Chromeウェブストアに移動します
 
 ## これはどんな拡張機能ですか？
 
@@ -18,7 +20,9 @@ SMTB スミトラ銀行で振込や口座登録の際に、
 
 ## 使い方
 1. まず、手元にSMTBのダイレクト利用カードを用意します
-2. インストールしたら、拡張機能のアイコン![image](https://github.com/qwe0001/smtb_autofill/assets/47100388/c0d6da07-99eb-4ae5-b85b-420f90817b25)(クローバーみたいなやつ)をクリックすると、ポップアップ画面が表示されます。ここに、ダイレクト番号の値を全て登録して、「保存」ボタンをクリックします
+2. インストールしたら、拡張機能のアイコン![image](https://github.com/qwe0001/smtb_autofill/assets/47100388/c0d6da07-99eb-4ae5-b85b-420f90817b25)(クローバーみたいなやつ)をクリックすると、
+
+   ポップアップ画面が表示されます。ここに、ダイレクト番号の値を全て登録して、「保存」ボタンをクリックします
 
 ![template](https://github.com/qwe0001/smtb_autofill/assets/47100388/2717e084-f921-4a1e-8650-2a127b612403)
 
