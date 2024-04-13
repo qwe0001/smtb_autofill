@@ -5,7 +5,6 @@
   "description": "SMTB スミトラ銀行のネット振込等で要求されるダイレクト番号入力を自動化します。他のサイトでは使用できません。",
   "version": "1.0",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "icons": {
